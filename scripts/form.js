@@ -12,20 +12,20 @@ async function sending(data) {
     })
 }
 
-form.addEventListener('submit', (e) => {
-    e.preventDefault();
-    //sending(form)
-    console.log(e.value)
+// form.addEventListener('submit', (e) => {
+//     e.preventDefault();
+//     //sending(form)
+//     console.log(e.value)
 
-    const fd = new FormData(form);
+//     const fd = new FormData(form);
 
-    const urlEncoded = new URLSearchParams(fd).toString();
+//     const urlEncoded = new URLSearchParams(fd).toString();
 
-    fetch('http://localhost:8080/dataBank', {
-        method: 'POST',
-        header: {
-            'Content-Type': 'application/x-www-form-urlencoded',
-        }
-    })
+//     fetch('http://localhost:8080/dataBank', {
+//         method: 'POST',
+//         header: {
+//             'Content-Type': 'application/x-www-form-urlencoded',
+//         }
+//     })
 
-})
+// })
